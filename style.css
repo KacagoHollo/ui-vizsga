@@ -74,18 +74,21 @@ header {
   align-items: center;
   justify-content: space-between;
 
+  padding: 0 20px 0;
+}
+
+header h1 {
   color: var(--primary);
   font-size: 12px;
   letter-spacing: 0.2em;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-
-  padding: 0 20px 0;
 }
 
 span.menu {
   font-size: 24px;
+  color: var(--primary);
 }
 
 main {
@@ -99,4 +102,90 @@ main {
   margin: 140px auto 0;
   gap: 100px 20px;
   z-index: 1;
+}
+
+.cards {
+  color: var(--secondary);
+  background-color: var(--primary);
+
+  position: relative;
+
+  width: 405px;
+  height: 450px;
+
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+
+  padding: 40px;
+
+  border: 2px solid #1a24fb;
+}
+
+.sub {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 36px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 16px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+
+  margin: 0 auto;
+}
+
+.number {
+  position: absolute;
+  top: 10px;
+  right: -10px;
+
+  width: 40px;
+  height: 40px;
+
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+button {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  margin: auto;
+
+  display: flex;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: 18px;
+
+  font-size: 14px;
+}
+
+div.cards button span {
+  position: absolute;
+  right: 0;
+
+  font-size: 18px;
+}
+
+.cards button:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+.cards button:hover span.arrow {
+  background-color: var(--secondary);
+  color: var(--primary);
 }
